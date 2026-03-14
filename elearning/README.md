@@ -1,16 +1,109 @@
-# React + Vite
+# eLearning Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern eLearning web application built with **React 19**, **Vite**, **shadcn/ui**, and **Tailwind CSS v4**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Prerequisites
 
-## React Compiler
+Make sure the following are installed on your machine before getting started:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [Node.js](https://nodejs.org/) (v18 or higher recommended)
+- [npm](https://www.npmjs.com/) (comes bundled with Node.js)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repo-url>
+cd elearning
+```
+
+### 2. Install all dependencies
+
+```bash
+npm install
+```
+
+This will install all modules listed in `package.json`, including:
+
+| Category | Packages |
+|---|---|
+| UI Framework | `react`, `react-dom`, `react-router-dom` |
+| Styling | `tailwindcss`, `@tailwindcss/vite`, `tw-animate-css` |
+| Components | `shadcn`, `@base-ui/react`, `lucide-react` |
+| Data / State | `zustand`, `recharts` |
+| Utilities | `clsx`, `tailwind-merge`, `class-variance-authority`, `sonner`, `next-themes` |
+| Build Tools | `vite`, `@vitejs/plugin-react`, `vite-plugin-svgr` |
+
+---
+
+## Running the App
+
+### Development server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Production build
+
+```bash
+npm run build
+```
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+---
+
+## Project Structure
+
+```
+elearning/
+  public/               # Static assets
+  src/
+    assets/             # Images and SVGs
+    components/         # Reusable UI components
+      layout/           # Navbar and layout wrappers
+      ui/               # shadcn UI primitives
+      video/            # Video player component
+    data/               # Mock data
+    hooks/              # Custom React hooks
+    lib/                # Utility functions
+    pages/              # Route-level page components
+    store/              # Zustand global store
+    App.jsx
+    index.css
+    main.jsx
+  index.html
+  vite.config.js
+  package.json
+```
+
+
+## To note
+
+I used mock datas in elearning\src\data\mockData.js.
+you can change it to use backend live server.
+
+# for courses
+
+In elearning\src\components\, you can configure it to also use backend server
+
+
+I used mock datas. when backend server is ready, you can switch
