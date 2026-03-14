@@ -49,7 +49,6 @@ This will install all modules listed in `package.json`, including:
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ### Production build
 
